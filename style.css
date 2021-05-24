@@ -1,0 +1,94 @@
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar-brand{
+  size: 3.5rem;
+  font-family: 'Anton', sans-serif;
+  color: black;
+}
+.navbar-brand:hover{
+  color: black;
+
+}
+
+.nav-link{
+  margin-right: 8px;
+  margin-left: 8px;
+  color: black;
+  font-family: 'Archivo Narrow', sans-serif;
+  text-transform: uppercase;
+
+}
+.nav-link:hover{
+  color: #FFFFFF;
+  background: #232323;
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+.search{
+  height: 40px;
+  border-radius: 60px;
+  outline: none;
+  margin-right: -35px;
+  font-family: 'Archivo Narrow', sans-serif;
+  border: 2px solid #41FF3A;
+}
+.btn0{
+  height: 40px;
+  width: 40%;
+  outline: none;
+  border: none;
+  background: #41FF3A;
+  color: white;
+  border-radius: 60px;
+  font-weight: 700;
+}
+
+.main{
+  background: url(./img/nct2020.jpg)no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: 50% 50%;
+  width: 100%;
+
+}
+
+.main h1{
+  font-size: 10rem;
+  font-weight: 700;
+  color: white;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.btn1{
+  height: 35px;
+  weight: 35%;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  border-radius: 40px;
+
+}
+
+.h1{
+  font-weight: 700;
+}
+
+.card:hover{
+  13px 12px 13px -1px rgba(94,94,94,0.58)
+  -webkit-box-shadow: 13px 12px 13px -1px rgba(94,94,94,0.58);
+box-shadow: 13px 12px 13px -1px rgba(94,94,94,0.58);
+}
+.card{
+  border-radius: 10px
+}
+
+.card img{
+  height: 120px;
+  weight: 170px;
+border-radius: 15px 30px;
+}
+\
