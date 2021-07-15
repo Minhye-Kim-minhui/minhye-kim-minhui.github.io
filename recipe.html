@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GW1CBK2LJY"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GW1CBK2LJY');
-</script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -17,14 +8,9 @@
 
     <!-- google fonts -->
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
-      rel="stylesheet"
-    />
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"/>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Merienda:400,700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Merienda:400,700&display=swap"  rel="stylesheet"/>
 
     <!-- fontaewsome -->
     <script src="https://kit.fontawesome.com/d56261bbb9.js"></script>
@@ -34,6 +20,18 @@
 
     <!-- style.css -->
     <link rel="stylesheet" href="dist/css/style.css" />
+
+    <!-- These belongs to the HTML file where you want C3 to work - put these lines into your <head> tag -->
+    <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+    <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+
+    <!-- Style.css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap Grid systyem -->
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+
   </head>
   <body>
     <!-- food header -->
@@ -75,13 +73,13 @@
               <ul>-1pound of cylinder shaped rice cake, bought or homemade.</ul>
               <ul> (Use a little more if you’re not adding hard boiled eggs and fish cakes)</ul>
               <ul>-4 cups of water</ul>
-              <ul>-7 large size dried anchovies, with heads and intestines removed</ul>
+              <ul>-7 large size dried anchovies, with heads and intestines removed</ul>
               <ul>-⅓ cup hot pepper paste</ul>
-              <ul>-1 tablespoon hot pepper flakes</ul>
+              <ul>-1 tablespoon hot pepper flakes</ul>
               <ul>-1 tablespoon sugar</ul>
               <ul>-3 green onions, cut into 3 inch long pieces</ul>
               <ul>-2 hard boiled eggs, shelled (optional)</ul>
-              <ul>-½ pound fish cakes (optional)</ul>
+              <ul>-½ pound fish cakes (optional)</ul>
               </p>
           </div>
           <div class="col-md-6 d-flex  justify-content-end">
@@ -121,12 +119,37 @@
                 <img src="img/tteokbokki5.jpeg" width="400" align='middle' vspace="10 hspace="10">
                 <p> remove from the heat and serve hot</p>
                 </p>
+                <div id="chart"></div>
+                     <script>
+                      var chart = c3.generate({
+                         bindto: '#chart',
+                         data: {
+                               columns: [
+                                 ['Carbohydrate',4.92],
+                                 ['Protein',42.76],
+                                 ['Fat',23.63],
+                                 ['Sugars',0.79],
+                                 ['Sodium',0.80759],
+                                 ['Cholesterol',0.13607],
+                                 ['Saturated fatty acids',8.58],
+                                 ['Trans Fat',0.84],
+
+                               ],
+                         type:'donut'
+                       },
+                       donut: { title: "Tteokbokki Nutrients",
+                          }
+
+                     });
+                     </script>
             </div>
           </div>
         </div>
       </div>
+
      <br>
      <br>
+
 
      <!-- Korean chicken food About -->
      <a id="Korean chicken"></a>
@@ -153,7 +176,7 @@
                 <ul>-1/4 cup brown sugar</ul>
                 <ul>-2 Tbsp soy sauce</ul>
                 <ul>-2 Tbsp minced garlic</ul>
-                <ul>-1 Tbsp sesame oil</ul>
+                <ul>-1 Tbsp sesame oil</ul>
                 <br>
                 <h3>OPTIONAL – TO GARNISH</h3>
                 <ul>-roasted sesame seeds</ul>
@@ -189,22 +212,45 @@
                   <img src="img/chicken2.jpeg" width="400" align='middle' vspace="10 hspace="10">
                   <p>2. In a deep saucepan (or frier) add a generous amount of oil and heat it until the oil temperature reaches 175 C / 347 F (or boiling). Start adding the battered chicken carefully and fry them until they cook (between 3 to 5 mins, depending on the size of chicken). Do not overcrowd the pan. (It might be useful to use a grease splatter screen if you have one. It’s super handy! It minimises oil splatter.)</p>
                   <br>
-                  <p>Take out the done chicken and place them onto some kitchen paper while frying the remaining chicken pieces. Once the first set of deep frying is completed, quickly scoop out any floating debris from the oil using a skimmer. Then deep fry the chicken again when the oil temperature reaches 175 C / 347 F (or boiling). Fry them until the batter is golden and crisp. (The second time frying is shorter than the first time, 2 to 3 mins) Set aside.</p>
+                  <p>Take out the done chicken and place them onto some kitchen paper while frying the remaining chicken pieces. Once the first set of deep frying is completed, quickly scoop out any floating debris from the oil using a skimmer. Then deep fry the chicken again when the oil temperature reaches 175 C / 347 F (or boiling). Fry them until the batter is golden and crisp. (The second time frying is shorter than the first time, 2 to 3 mins) Set aside.</p>
                   <br>
                   <img src="img/chicken3.jpeg" width="400" align='middle' vspace="10 hspace="10">
                   <p>3. In a separate saucepan, add in the Korean fried chicken sauce ingredients (listed above). Heat the sauce over low to medium heat and stir well. Once it starts bubbling, remove the pan from the heat.</p>
                   <br>
-                  <p>Place the double fried chicken into a large mixing bowl then pour the fried chicken sauce over the chicken to coat. Mix them lightly and thoroughly. Alternatively, serve the fried chicken and the sauce separately and use the sauce as a dipping sauce.
+                  <p>Place the double fried chicken into a large mixing bowl then pour the fried chicken sauce over the chicken to coat. Mix them lightly and thoroughly. Alternatively, serve the fried chicken and the sauce separately and use the sauce as a dipping sauce.
 Once all the chicken is coated with the sauce, serve it hot immediately. Leftover chicken can be refrigerated for a day or two and eaten cold. But it won’t be as crunchy.</p>
                   <br>
                   <img src="img/chicken4.jpeg" width="400" align='middle' vspace="10 hspace="10">
                   <p>remove from the heat and serve hot</p>
                   <br>
                 </p>
+                <div id="chart1"></div>
+                <script>
+                 var chart = c3.generate({
+                    bindto: '#chart1',
+                    data: {
+                          columns: [
+                            ['carbohydrate',21.29],
+                            ['protein',35.47],
+                            ['Fat',33.67],
+                            ['sugars',0],
+                            ['salt',0.38681],
+                            ['cholesterol',0.16569],
+                            ['saturated fatty acids',6.38],
+                            ['trans fat',0.24],
+                          ],
+                    type:'donut'
+                  },
+                  donut: { title: "korean fried chicken",
+                     }
+
+                });
+                </script>
               </div>
             </div>
           </div>
         </div>
+
         <br>
         <br>
 
@@ -256,6 +302,7 @@ Once all the chicken is coated with the sauce, serve it hot immediately. Leftove
             <br>
             <br>
             <br>
+
             <!-- food testimonials -->
             <div class="food_testimonial">
               <div class="overlay">
@@ -266,13 +313,13 @@ Once all the chicken is coated with the sauce, serve it hot immediately. Leftove
                   <div class="testimonials">
                     <p class="testimonials_text">
                     <img src="img/koreanbulgogi1.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                    <p>1. If using packaged pre-sliced meat, separate the slices. Remove any excess blood from the pre-sliced meat using paper towels.  </p>
+                    <p>1. If using packaged pre-sliced meat, separate the slices. Remove any excess blood from the pre-sliced meat using paper towels.  </p>
                     <br>
                     <img src="img/koreanbulgogi2.jpeg" width="400" align='middle' vspace="10 hspace="10">
                     <p>2. Mix all the marinade ingredients in a bowl.</p>
                     <br>
                     <img src="img/koreanbulgogi3.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                    <p>3. Place the meat and vegetables in a large bowl. Add the marinade and toss gently to combine everything well. Marinate the meat for 30 minutes to an hour, up to overnight.  </p>
+                    <p>3. Place the meat and vegetables in a large bowl. Add the marinade and toss gently to combine everything well. Marinate the meat for 30 minutes to an hour, up to overnight. </p>
                     <br>
                     <img src="img/koreanbulgogi4.jpeg" width="400" align='middle' vspace="10 hspace="10">
                     <p>4.Grilling: Grill the meat on a charcoal or gas grill or pan fry in a skillet over high heat until slightly caramelized. If pan searing, preheat the pan nice and hot and cook the meat until slightly caramelized. Do not crowd the skillet.</p>
@@ -281,6 +328,29 @@ Once all the chicken is coated with the sauce, serve it hot immediately. Leftove
                     <p>5. OR Stir-frying: Preheat the pan, and add the meat over high meat. You can crowd the pan to generate some liquid and let the meat cook in its own juice. Cook until the meat is no longer pink. Use all the marinade if you want some sauce at the end.</p>
                     <br>
                     </p>
+                    <div id="chart2"></div>
+                    <script>
+                     var chart = c3.generate({
+                        bindto: '#chart2',
+                        data: {
+                              columns: [
+                                ['Carbohydrate',7.8],
+                                ['Protein',34.4],
+                                ['Fat',25.2],
+                                ['Sugars',7.9],
+                                ['Sodium',0.56071],
+                                ['Cholesterol',9.96885],
+                                ['Saturated fatty acids',6.6],
+                                ['Trans Fat',0.4],
+
+                              ],
+                        type:'donut'
+                      },
+                      donut: { title: "Korean Bulgogi Nutrients",
+                         }
+
+                    });
+                    </script>
                 </div>
               </div>
             </div>
@@ -374,6 +444,29 @@ Once all the chicken is coated with the sauce, serve it hot immediately. Leftove
                       <img src="img/japchae7.jpeg" width="400" align='middle' vspace="10 hspace="10">
                       <p>8. Add the egg garnish and 1 tablespoon sesame seeds. Mix it and transfer it to a large plate and serve.</p>
                       </p>
+                      <div id="chart3"></div>
+                      <script>
+                       var chart = c3.generate({
+                          bindto: '#chart3',
+                          data: {
+                                columns: [
+                                  ['Carbohydrate',48.52],
+                                  ['Protein',9.41],
+                                  ['Fat',6.6],
+                                  ['Sugars',1.45],
+                                  ['Sodium',0.71968],
+                                  ['Cholesterol',0.04531],
+                                  ['Saturated fatty acids',1.09],
+                                  ['Trans Fats',0.14],
+
+                                ],
+                          type:'donut'
+                        },
+                        donut: { title: "Japchae Nutrition Facts",
+                           }
+
+                      });
+                      </script>
                   </div>
                 </div>
               </div>
@@ -436,6 +529,28 @@ Once all the chicken is coated with the sauce, serve it hot immediately. Leftove
                         <p>4. Add the kimchi juice and about 2 to 2.5 cups of water (or broth). Bring it to a boil, and continue cooking for 5 minutes. Then, reduce the heat to medium, and boil, covered, for about 15 minutes. You can add more water if necessary.</p>
                         <p>5.Drop the tofu and scallions in. Salt (or soup or regular soy sauce) and pepper to taste. (Salt is usually not necessary, unless kimchi was lightly seasoned or kimchi juice is not available.) Boil until the tofu is cooked through, about 5 minutes. Serve while bubbling over from the heat.</p>
                         </p>
+                        <div id="chart4"></div>
+                        <script>
+                         var chart = c3.generate({
+                            bindto: '#chart4',
+                            data: {
+                                  columns: [
+                                    ['carbohydrate',11.93],
+                                    ['protein',15.07],
+                                    ['Fat',15.01],
+                                    ['Sugars',3.03],
+                                    ['Sodium',1.96014],
+                                    ['Cholesterol',0.02518],
+                                    ['Saturated fatty acids',2.76],
+                                    ['Trans fat',0.03],
+                                  ],
+                            type:'donut'
+                          },
+                          donut: { title: "Kimchi Stew Nutrients",
+                             }
+
+                        });
+                        </script>
                     </div>
                   </div>
                 </div>
@@ -501,6 +616,30 @@ Once all the chicken is coated with the sauce, serve it hot immediately. Leftove
                           <img src="img/Korean soybean paste stew4.jpeg" width="400" align='middle' vspace="10 hspace="10">
                           <p>4.	Add the onion, garlic, tofu, zucchini, and chili pepper. Boil for an additional 5 to 6 minutes. Throw in the scallion and add the vinegar with a minute or two remaining.</p>
                           </p>
+                          <div id="chart5"></div>
+                          <script>
+                           var chart = c3.generate({
+                              bindto: '#chart5',
+                              data: {
+                                    columns: [
+                                      ['Carbohydrate',13.5],
+                                      ['Protein',1.5],
+                                      ['Fat',5],
+                                      ['Sugars',1.8],
+                                      ['Sodium',2.02101],
+                                      ['Cholesterol',0.01181],
+                                      ['Saturated fatty acids',0.8],
+                                      ['Dietary fiber',5.5],
+                                      ['Potassium',0.49866],
+                                      ['Calcium',0.152],
+                                    ],
+                              type:'donut'
+                            },
+                            donut: { title: "Korean Soybean Paste Stew Nutrients",
+                               }
+
+                          });
+                          </script>
                       </div>
                     </div>
                   </div>
@@ -508,73 +647,6 @@ Once all the chicken is coated with the sauce, serve it hot immediately. Leftove
                 <br>
                 <br>
 
-                <!--  tteokgalbi food About -->
-                <div class="food_about">
-                  <div class="container">
-                    <h2 class="text-center">TTEOKGALBI OR GRILLED MINED RIB</h2>
-                    <br>
-                    <br>
-                    <div class="row">
-                      <div class="col-md-6">
-                        <h1>Ingredients <span class="color-primary">!</span></h1>
-                        <p class="line-space color-secondary">
-                          <p>
-                          <ul>-3~4 pounds beef short ribs or 2 pounds beef chuck or brisket</ul>
-                          <br>
-                          <h3>Marinade</h3>
-                          <ul>-4 tablespoons soy sauce</ul>
-                          <ul>-2 tablespoons sugar</ul>
-                          <ul>-2 tablespoons honey</ul>
-                          <ul>-2 tablespoons rice wine or Mirin</ul>
-                          <ul>-3 tablespoons grated Korean/Asian pear or apple grated</ul>
-                          <ul>-1/2 medium onion finely chopped</ul>
-                          <ul>-3 scallions finely chopped</ul>
-                          <ul>-2 tablespoons minced garlic</ul>
-                          <ul>-1 teaspoon minced ginger</ul>
-                          <ul>-1 tablespoons sesame oil</ul>
-                          <ul>-1/4 teaspoon black pepper</ul>
-                          <ul>-chopped pine nuts for garnish - optional</ul>
-                          </p>
-                      </div>
-                      <div class="col-md-6 d-flex  justify-content-end">
-                        <figure>
-                          <img src="img/soybeanstew.jpeg" class="rounded"/>
-                          <div class="back"></div>
-                        </figure>
-                      </div>
-                    </div>
-                  </div>
-                <div>
-                    <br>
-                    <br>
-                    <br>
-                    <!-- food testimonials -->
-                    <div class="food_testimonial">
-                      <div class="overlay">
-                        <div class="valign_wrapper">
-                          <br>
-                          <br>
-                          <h2 class="color-white">Recipe</h2>
-                          <div class="testimonials">
-                            <p class="testimonials_text">
-                            <img src="img/Korean soybean paste stew1.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                            <p>1.	Cut the tofu and zucchini into about 1-inch cubes. Cut the radish into thin small squares. Thinly slice the onion and pepper. Roughly chop the scallion. Slice the meat into thin strips.</p>
-                            <br>
-                            <img src="img/Korean soybean paste stew2.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                            <p>2.	Preheat a small pot with a little bit of oil. Sauté the meat, soybean paste, and chili pepper flakes, over medium heat for 3 to 4 minutes.</p>
-                            <br>
-                            <img src="img/Korean soybean paste stew3.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                            <p>3.	Add the water (or anchovy broth) and stir well to dissolve the soy bean paste. Add the radish. Boil over medium high heat for 4 to 5 minutes.</p>
-                            <br>
-                            <img src="img/Korean soybean paste stew4.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                            <p>4.	Add the onion, garlic, tofu, zucchini, and chili pepper. Boil for an additional 5 to 6 minutes. Throw in the scallion and add the vinegar with a minute or two remaining.</p>
-                            </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <br>
-                  <br>
 
                   <!-- tteokgalbi or Grilled mined rib food About -->
                   <div class="food_about">
@@ -648,7 +720,30 @@ Once all the chicken is coated with the sauce, serve it hot immediately. Leftove
                     <img src="img/tteokgalbi9.jpeg" width="300" align='middle' vspace="10 hspace="10">
                     <img src="img/tteokgalbi8.jpeg" width="300" align='middle' vspace="10 hspace="10">
                    <p>8. Attach the meat to the bone in even thickness as you’re wrapping the bone with the meat. Press with your palms so the meat is tightly attached to the meat.</p>
-                   </p>
+                 </p>
+                 <div id="chart6"></div>
+                 <script>
+                  var chart = c3.generate({
+                     bindto: '#chart6',
+                     data: {
+                           columns: [
+                             ['Carbohydrate',60.5],
+                             ['Protein',7.6],
+                             ['Fat',3.5],
+                             ['Sugars',6.8],
+                             ['Sodium',0.85308],
+                             ['Cholesterol',0.13607],
+                             ['Saturated fatty acids',0.8],
+                             ['Dietary fiber',3.5],
+
+                           ],
+                     type:'donut'
+                   },
+                   donut: { title: "Tteokgalbi Nutrients",
+                      }
+
+                 });
+                 </script>
                </div>
             </div>
         </div>
