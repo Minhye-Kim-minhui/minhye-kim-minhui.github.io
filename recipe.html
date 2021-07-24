@@ -1,752 +1,524 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Food House</title>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>recipes</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
 
-    <!-- google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"/>
+		<!-- These belongs to the HTML file where you want C3 to work - put these lines into your <head> tag -->
+		<script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+		<script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
 
-    <link href="https://fonts.googleapis.com/css?family=Merienda:400,700&display=swap"  rel="stylesheet"/>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-    <!-- fontaewsome -->
-    <script src="https://kit.fontawesome.com/d56261bbb9.js"></script>
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
 
-    <!-- bootstrap grid -->
-    <link rel="stylesheet" href="dist/css/bootstrap-grid.css" />
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Food Blog</span>
+								</a>
 
-    <!-- style.css -->
-    <link rel="stylesheet" href="dist/css/style.css" />
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
 
-    <!-- These belongs to the HTML file where you want C3 to work - put these lines into your <head> tag -->
-    <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
-    <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+						</div>
+					</header>
 
-    <!-- Style.css -->
-    <link rel="stylesheet" href="css/style.css">
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="recipe.html">Recipes</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="#footer">Contact</a></li>
+						</ul>
+					</nav>
 
-    <!-- Bootstrap Grid systyem -->
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Korean Food Recipes</h1>
 
-  </head>
-  <body>
-    <!-- food header -->
-    <div class="food_header">
-      <div class="overlay">
-        <div class="navbar">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="recipe.html">Recipe</a>
-                </li>
-                <li>
-                    <a href="index.html#story">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-        </nav>
-        <div class="valign_wrapper mb_auto">
-          <h1 class="site_heading">Food Recipes</h1>
-        </div>
-      </div>
-    </div>
+				<!-- tteokbokki -->
+							<a id="tteokbokki"></a>
+							<div class="food_about">
+								<div class="container">
+									<h2 class="text-center">TTEOKBOKKI</h2>
+									<img src="images/tteokbokki.jpg" width="400" alt="tteokbokki" />
+									<div class="row">
+										<div class="col-md-6"><br>
+											<h4> Ingredients <span class="color-primary">!</span></h4>
+											<p class="line-space color-secondary">
+												<p>
+												<li>1pound of cylinder shaped rice cake, bought or homemade. (Use a little more if you’re not adding hard boiled eggs and fish cakes)</li>
+												<li>4 cups of water</li>
+												<li>7 large size dried anchovies, with heads and intestines removed</li>
+												<li>⅓ cup hot pepper paste</li>
+												<li>1 tablespoon hot pepper flakes</li>
+												<li>1 tablespoon sugar</li>
+												<li>3 green onions, cut into 3 inch long pieces</li>
+												<li>2 hard boiled eggs, shelled (optional)</li>
+												<li>½ pound fish cakes (optional)</li>
+												</p>
+										</div>
+									</div>
+								</div>
+						 	</div>
 
-    <!-- tteokbokki food About -->
-    <a id="tteokbokki"></a>
-    <div class="food_about">
-      <div class="container">
-        <h2 class="text-center">tteokbokki</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <h1>Ingredients <span class="color-primary">!</span></h1>
-            <p class="line-space color-secondary">
-              <p>
-              <ul>-1pound of cylinder shaped rice cake, bought or homemade.</ul>
-              <ul> (Use a little more if you’re not adding hard boiled eggs and fish cakes)</ul>
-              <ul>-4 cups of water</ul>
-              <ul>-7 large size dried anchovies, with heads and intestines removed</ul>
-              <ul>-⅓ cup hot pepper paste</ul>
-              <ul>-1 tablespoon hot pepper flakes</ul>
-              <ul>-1 tablespoon sugar</ul>
-              <ul>-3 green onions, cut into 3 inch long pieces</ul>
-              <ul>-2 hard boiled eggs, shelled (optional)</ul>
-              <ul>-½ pound fish cakes (optional)</ul>
-              </p>
-          </div>
-          <div class="col-md-6 d-flex  justify-content-end">
-            <figure>
-              <img src="img/tteokbokki.jpg" class="rounded" />
-              <div class="back"></div>
-            </figure>
-          </div>
-        </div>
-      </div>
-    </div>
-        <br>
-        <br>
-        <br>
+             <img src="images/tteokbokki1.jpeg" width="400" alt="tteokbokki" />
+							<p>1. Add the water, dried anchovies, and dried kelp to a shallow pot or pan.</p>
+						 <img src="images/tteokbokki2.jpeg" width="400" alt="tteokbokki" />
+							<p>2. Boil for 15 minutes over medium high heat without the lid.</p>
+						 <img src="images/tteokbokki3.jpeg" width="400" alt="tteokbokki" />
+							<p>3. Combine hot pepper paste, hot pepper flakes, and sugar in a small bowl. Remove the anchovies and kelp from the pot and add the rice cake, the mixture in the bowl, the green onion, and the optional fish cakes and hard boiled eggs. The stock will be about 2 ½ cups.</p>
+							<img src="images/tteokbokki4.jpeg" width="400" alt="tteokbokki" />
+ 							<p>4. Stir gently with a wooden spoon when it starts to boil. Keep stirring until the rice cake turns soft and the sauce thickens and looks shiny, which should take about 10 -15 minutes. If the rice cake is not soft enough, add more water and continue stirring until soften. When you use freshly made rice cake, it takes shorter time. If you use frozen rice cake, thaw it out and soak in cold water to soften it before cooking</p>
+ 						 <img src="images/tteokbokki5.jpeg" width="400" alt="tteokbokki" />
+ 							<p>remove from the heat and serve hot</p>
 
-        <!-- food testimonials -->
-        <div class="food_testimonial">
-          <div class="overlay">
-            <div class="valign_wrapper">
-              <br>
-              <br>
-              <h2 class="color-white">Recipe</h2>
-              <div class="testimonials">
-                <p class="testimonials_text">
-                <img src="img/tteokbokki1.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                <p>1. Add the water, dried anchovies, and dried kelp to a shallow pot or pan.</p>
-                <br>
-                <img src="img/tteokbokki2.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                <p>2. Boil for 15 minutes over medium high heat without the lid.</p>
-                <br>
-                <img src="img/tteokbokki3.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                <p>3. Combine hot pepper paste, hot pepper flakes, and sugar in a small bowl. Remove the anchovies and kelp from the pot and add the rice cake, the mixture in the bowl, the green onion, and the optional fish cakes and hard boiled eggs. The stock will be about 2 ½ cups.</p>
-                <br>
-                <img src="img/tteokbokki4.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                <p>4. Stir gently with a wooden spoon when it starts to boil. Keep stirring until the rice cake turns soft and the sauce thickens and looks shiny, which should take about 10 -15 minutes. If the rice cake is not soft enough, add more water and continue stirring until soften. When you use freshly made rice cake, it takes shorter time. If you use frozen rice cake, thaw it out and soak in cold water to soften it before cooking</p>
-                <br>
-                <img src="img/tteokbokki5.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                <p> remove from the heat and serve hot</p>
-                </p>
-                <div id="chart1"></div>
-                     <script>
-                      var chart = c3.generate({
-                         bindto: '#chart1',
-                         data: {
-                               columns: [
-                                 ['Carbohydrate',4.92],
-                                 ['Protein',42.76],
-                                 ['Fat',23.63],
-                                 ['Sugars',0.79],
-                                 ['Sodium',0.80759],
-                                 ['Cholesterol',0.13607],
-                                 ['Saturated fatty acids',8.58],
-                                 ['Trans Fat',0.84],
+							<div id="chart"></div>
+							<script>
+							 var chart = c3.generate({
+									bindto: '#chart',
+									data: {
+												columns: [
+													['Carbohydrate',4.92],
+													['Protein',42.76],
+													['Fat',23.63],
+													['Sugars',0.79],
+													['Sodium',0.80759],
+													['Cholesterol',0.13607],
+													['Saturated fatty acids',8.58],
+													['Trans Fat',0.84],
 
-                               ],
-                         type:'donut'
-                       },
-                       donut: { title: "Tteokbokki Nutrients",
-                          }
+												],
+									type:'donut'
+								},
+								donut: { title: "Tteokbokki Nutrients",
+									 }
 
-                     });
-                     </script>
-            </div>
-          </div>
-        </div>
-      </div>
+							});
+							</script><br>
 
-     <br>
-     <br>
+				<!-- KOREAN CHICKENi -->
+							<a id="KOREAN CHICKEN"></a>
+							<div class="food_about">
+								<div class="container">
+									<h2 class="text-center">KOREAN CHICKEN</h2>
+										<img src="images/chicken.jpeg" width="500" alt="chicken" />
+											<div class="row">
+												<div class="col-md-6"><br>
+													<h4> Ingredients <span class="color-primary">!</span></h4>
+													<p class="line-space color-secondary">
+													<p>
+													<li>1.4 kg / 3 pounds whole chicken, cut into pieces or chicken wings / drumsticks / boneless chicken thigh – choose from these based on your preference, rinsed.</li>
+													<li>2 Tbsp rice wine</li>
+													<li>2 tsp minced ginger</li>
+													<li>1 tsp fine sea salt</li>
+													<li>1/2 tsp ground black pepper</li>
+													<li>1 cup potato starch or corn starch</li>
+													<li>Some cooking oil for deep frying (I used rice bran oil)</li><br>
+													<h5>KOREAN FRIED CHICKEN SAUCE</h5>
+													<li>3 Tbsp tomato sauce / ketchup</li>
+													<li>2 Tbsp to 2 1/2 Tbsp gochujang (Korean chilli paste)</li>
+													<li>1/4 cup honey</li>
+													<li>1/4 cup brown sugar</li>
+													<li>2 Tbsp soy sauce</li>
+													<li>2 Tbsp minced garlic</li>
+													<li>1 Tbsp sesame oil</li><br>
+													<h5>OPTIONAL – TO GARNISH</h5>
+													<li>roasted sesame seeds</li>
+					                <li>green onion, finely chopped or shredded using this tool</li>
+					                <li>1 Tbsp = 15 ml, 1 Cup = 250 ml</li>
+													</p>
+												</div>
+											</div>
+										</div>
+								 	</div>
 
+		           <img src="images/chicken1.jpeg" width="600" alt="chicken" />
+								<p>1. In a bowl, place the chicken, rice wine, ginger, salt and black pepper. Combine them well. Then evenly coat the chicken with the starch and set side.
+                  (To get the effect like the below picture, dip the individual chicken pieces into the bowl of starch, roll the chicken around a bit then take them out and set aside.)</p>
+							 <img src="images/chicken2.jpeg" width="600" alt="chicken" />
+								<p>2. In a deep saucepan (or frier) add a generous amount of oil and heat it until the oil temperature reaches 175 C / 347 F (or boiling). Start adding the battered chicken carefully and fry them until they cook (between 3 to 5 mins, depending on the size of chicken). Do not overcrowd the pan. (It might be useful to use a grease splatter screen if you have one. It’s super handy! It minimises oil splatter.)</p>
+								<p>Take out the done chicken and place them onto some kitchen paper while frying the remaining chicken pieces. Once the first set of deep frying is completed, quickly scoop out any floating debris from the oil using a skimmer. Then deep fry the chicken again when the oil temperature reaches 175 C / 347 F (or boiling). Fry them until the batter is golden and crisp. (The second time frying is shorter than the first time, 2 to 3 mins) Set aside.</p>
+							 <img src="images/chicken3.jpeg" width="600" alt="chicken" />
+					  		<p>3. In a separate saucepan, add in the Korean fried chicken sauce ingredients (listed above). Heat the sauce over low to medium heat and stir well. Once it starts bubbling, remove the pan from the heat.</p>
+								<p>Place the double fried chicken into a large mixing bowl then pour the fried chicken sauce over the chicken to coat. Mix them lightly and thoroughly. Alternatively, serve the fried chicken and the sauce separately and use the sauce as a dipping sauce. Once all the chicken is coated with the sauce, serve it hot immediately. Leftover chicken can be refrigerated for a day or two and eaten cold. But it won’t be as crunchy.</p>
+								<img src="images/chicken4.jpeg" width="500" alt="chicken" />
+	 							<p>remove from the heat and serve hot</p>
 
-     <!-- Korean chicken food About -->
-     <a id="Korean chicken"></a>
-      <div class="food_about">
-        <div class="container">
-          <h2 class="text-center">KOREAN CHICKEN</h2>
-          <div class="row">
-            <div class="col-md-6">
-              <h1>Ingredients <span class="color-primary">!</span></h1>
-              <p class="line-space color-secondary">
-                <p>
-                <ul>-1.4 kg / 3 pounds whole chicken, cut into pieces or chicken wings / drumsticks / boneless chicken thigh – choose from these based on your preference, rinsed</ul>
-                <ul>-2 Tbsp rice wine</ul>
-                <ul>-2 tsp minced ginger</ul>
-                <ul>-1 tsp fine sea salt</ul>
-                <ul>-1/2 tsp ground black pepper</ul>
-                <ul>-1 cup potato starch or corn starch</ul>
-                <ul>-Some cooking oil for deep frying (I used rice bran oil)</ul>
-                <br>
-                <ul>KOREAN FRIED CHICKEN SAUCE</ul>
-                <ul>-3 Tbsp tomato sauce / ketchup</ul>
-                <ul>-2 Tbsp to 2 1/2 Tbsp gochujang (Korean chilli paste)</ul>
-                <ul>-1/4 cup honey</ul>
-                <ul>-1/4 cup brown sugar</ul>
-                <ul>-2 Tbsp soy sauce</ul>
-                <ul>-2 Tbsp minced garlic</ul>
-                <ul>-1 Tbsp sesame oil</ul>
-                <br>
-                <h3>OPTIONAL – TO GARNISH</h3>
-                <ul>-roasted sesame seeds</ul>
-                <ul>green onion, finely chopped or shredded using this tool</ul>
-                <ul>-1 Tbsp = 15 ml, 1 Cup = 250 ml</ul>
-                </p>
-            </div>
-            <div class="col-md-6 d-flex  justify-content-end">
-              <figure>
-                <img src="img/chicken.jpeg" class="rounded" />
-                <div class="back"></div>
-              </figure>
-            </div>
-          </div>
-        </div>
-      <div>
-          <br>
-          <br>
-          <br>
-          <!-- food testimonials -->
-          <div class="food_testimonial">
-            <div class="overlay">
-              <div class="valign_wrapper">
-                <br>
-                <br>
-                <h2 class="color-white">Recipe</h2>
-                <div class="testimonials">
-                  <p class="testimonials_text">
-                  <img src="img/chicken1.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                  <p>1. In a bowl, place the chicken, rice wine, ginger, salt and black pepper. Combine them well. Then evenly coat the chicken with the starch and set side.</p>
-                  <p>(To get the effect like the below picture, dip the individual chicken pieces into the bowl of starch, roll the chicken around a bit then take them out and set aside.) </p>
-                  <br>
-                  <img src="img/chicken2.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                  <p>2. In a deep saucepan (or frier) add a generous amount of oil and heat it until the oil temperature reaches 175 C / 347 F (or boiling). Start adding the battered chicken carefully and fry them until they cook (between 3 to 5 mins, depending on the size of chicken). Do not overcrowd the pan. (It might be useful to use a grease splatter screen if you have one. It’s super handy! It minimises oil splatter.)</p>
-                  <br>
-                  <p>Take out the done chicken and place them onto some kitchen paper while frying the remaining chicken pieces. Once the first set of deep frying is completed, quickly scoop out any floating debris from the oil using a skimmer. Then deep fry the chicken again when the oil temperature reaches 175 C / 347 F (or boiling). Fry them until the batter is golden and crisp. (The second time frying is shorter than the first time, 2 to 3 mins) Set aside.</p>
-                  <br>
-                  <img src="img/chicken3.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                  <p>3. In a separate saucepan, add in the Korean fried chicken sauce ingredients (listed above). Heat the sauce over low to medium heat and stir well. Once it starts bubbling, remove the pan from the heat.</p>
-                  <br>
-                  <p>Place the double fried chicken into a large mixing bowl then pour the fried chicken sauce over the chicken to coat. Mix them lightly and thoroughly. Alternatively, serve the fried chicken and the sauce separately and use the sauce as a dipping sauce.
-Once all the chicken is coated with the sauce, serve it hot immediately. Leftover chicken can be refrigerated for a day or two and eaten cold. But it won’t be as crunchy.</p>
-                  <br>
-                  <img src="img/chicken4.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                  <p>remove from the heat and serve hot</p>
-                  <br>
-                </p>
-                <div id="chart2"></div>
-                <script>
-                 var chart = c3.generate({
-                    bindto: '#chart2',
-                    data: {
-                          columns: [
-                            ['carbohydrate',21.29],
-                            ['protein',35.47],
-                            ['Fat',33.67],
-                            ['sugars',0],
-                            ['salt',0.38681],
-                            ['cholesterol',0.16569],
-                            ['saturated fatty acids',6.38],
-                            ['trans fat',0.24],
-                          ],
-                    type:'donut'
-                  },
-                  donut: { title: "korean fried chicken",
-                     }
+								<div id="chart1"></div>
+								<script>
+								 var chart = c3.generate({
+										bindto: '#chart1',
+										data: {
+													columns: [
+														['carbohydrate',21.29],
+														['protein',35.47],
+														['Fat',33.67],
+														['sugars',0],
+														['salt',0.38681],
+														['cholesterol',0.16569],
+														['saturated fatty acids',6.38],
+														['trans fat',0.24],
+													],
+										type:'donut'
+									},
+									donut: { title: "korean fried chicken",
+										 }
 
-                });
-                </script>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <br>
-        <br>
+								});
+								</script><br>
 
 
-        <!-- Korean bulgogi food About -->
-        <div class="food_about">
-          <div class="container">
-            <h2 class="text-center">KOREAN BULGOGI</h2>
-            <br>
-            <br>
-            <div class="row">
-              <div class="col-md-6">
-                <h1>Ingredients <span class="color-primary">!</span></h1>
-                <p class="line-space color-secondary">
-                  <p>
-                  <ul>-2 pounds thinly-sliced beef (rib eye or top sirloin) - see note</ul>
-                  <ul>-3 scallions, cut into 2-inch pieces</ul>
-                  <ul>-1 small onion, thinly sliced</ul>
-                  <ul>-1 small carrot, thinly sliced - optional</ul>
-                  <br>
-                  <h3>Marinade</h3>
-                  <ul>-6 tablespoons soy sauce</ul>
-                  <ul>-3 tablespoons water</ul>
-                  <ul>-4 tablespoons sugar ( or you can use 2 T sugar 2 T honey) Use more if not using Korean pear or apple</ul>
-                  <ul>-2 tablespoons rice wine or mirin</ul>
-                  <ul>-2 tablespoons minced garlic</ul>
-                  <ul>-2 tablespoons sesame oil</ul>
-                  <ul>-2 teaspoons sesame seeds</ul>
-                  <ul>-4 tablespoons grated Korean/Asian pear</ul>
-                  <ul>1/8 teaspoon pepper</ul>
-                  <br>
-                  <h3>To serve bulgogi Seoul-style</h3>
-                  <ul>-3 ounces potato starch noodles (soaked in hot water for 20 minutes and drained)<ul>
-                  <ul>-3 scallions</ul>
-                  <ul>-1 pack enoki mushrooms (stems removed)</ul>
-                  <ul>-2 cups water, dashima broth, or beef broth</ul>
-                  <ul>-1 teaspoon soy sauce</ul>
-                  </p>
-              </div>
-              <div class="col-md-6 d-flex  justify-content-end">
-                <figure>
-                  <img src="img/koreanbulgogi.jpeg" class="rounded"/>
-                  <div class="back"></div>
-                </figure>
-              </div>
-            </div>
-          </div>
-        <div>
-            <br>
-            <br>
-            <br>
+							<!-- koreanbulgogi -->
+										<a id="koreanbulgogi"></a>
+										<div class="food_about">
+											<div class="container">
+												<h2 class="text-center">KOREAN BULGOGI</h2>
+												<img src="images/koreanbulgogi.jpg" width="400" alt="kreanbulgogi" />
+												<div class="row">
+													<div class="col-md-6"><br>
+														<h4> Ingredients <span class="color-primary">!</span></h4>
+														<p class="line-space color-secondary">
+															<p>
+															<li>2 pounds thinly-sliced beef (rib eye or top sirloin) - see note</li>
+															<li>3 scallions, cut into 2-inch pieces</li>
+															<li>1 small onion, thinly sliced</li>
+															<li>1 small carrot, thinly sliced - optional</li><br>
+															<h5>Marinade</h5>
+															<li>6 tablespoons soy sauce</li>
+															<li>3 tablespoons water</li>
+															<li>4 tablespoons sugar ( or you can use 2 T sugar 2 T honey) Use more if not using Korean pear or apple</li>
+															<li>2 tablespoons rice wine or mirin</li>
+															<li>2 tablespoons minced garlic</li>
+															<li>2 tablespoons sesame oil</li>
+															<li>2 teaspoons sesame seeds</li>
+															<li>4 tablespoons grated Korean/Asian pear</li>
+															<li>1/8 teaspoon pepper</li><br>
+															<h5>To serve bulgogi Seoul-style</h5>
+															<li>-3 ounces potato starch noodles (soaked in hot water for 20 minutes and drained)</li>
+						                  <li>-3 scallions</li>
+						                  <li>-1 pack enoki mushrooms (stems removed)</li>
+						                  <li>-2 cups water, dashima broth, or beef broth</li>
+						                  <li>-1 teaspoon soy sauce</li>
+															</p>
+													</div>
+								    		</div>
+							   		 </div>
+							   	</div>
 
-            <!-- food testimonials -->
-            <div class="food_testimonial">
-              <div class="overlay">
-                <div class="valign_wrapper">
-                  <br>
-                  <br>
-                  <h2 class="color-white">Recipe</h2>
-                  <div class="testimonials">
-                    <p class="testimonials_text">
-                    <img src="img/koreanbulgogi1.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                    <p>1. If using packaged pre-sliced meat, separate the slices. Remove any excess blood from the pre-sliced meat using paper towels.  </p>
-                    <br>
-                    <img src="img/koreanbulgogi2.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                    <p>2. Mix all the marinade ingredients in a bowl.</p>
-                    <br>
-                    <img src="img/koreanbulgogi3.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                    <p>3. Place the meat and vegetables in a large bowl. Add the marinade and toss gently to combine everything well. Marinate the meat for 30 minutes to an hour, up to overnight. </p>
-                    <br>
-                    <img src="img/koreanbulgogi4.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                    <p>4.Grilling: Grill the meat on a charcoal or gas grill or pan fry in a skillet over high heat until slightly caramelized. If pan searing, preheat the pan nice and hot and cook the meat until slightly caramelized. Do not crowd the skillet.</p>
-                    <br>
-                    <img src="img/koreanbulgogi.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                    <p>5. OR Stir-frying: Preheat the pan, and add the meat over high meat. You can crowd the pan to generate some liquid and let the meat cook in its own juice. Cook until the meat is no longer pink. Use all the marinade if you want some sauce at the end.</p>
-                    <br>
-                    </p>
-                    <div id="chart3"></div>
-                    <script>
-                     var chart = c3.generate({
-                        bindto: '#chart3',
-                        data: {
-                              columns: [
-                                ['Carbohydrate',7.8],
-                                ['Protein',34.4],
-                                ['Fat',25.2],
-                                ['Sugars',7.9],
-                                ['Sodium',0.56071],
-                                ['Cholesterol',9.96885],
-                                ['Saturated fatty acids',6.6],
-                                ['Trans Fat',0.4],
+					          <img src="images/koreanbulgogi1.jpeg" width="400" alt="bulgogi" />
+										<p>1. If using packaged pre-sliced meat, separate the slices. Remove any excess blood from the pre-sliced meat using paper towels.</p>
+									 <img src="images/koreanbulgogi2.jpeg" width="400" alt="bulgogi" />
+										<p>2. Mix all the marinade ingredients in a bowl.</p>
+									 <img src="images/koreanbulgogi3.jpeg" width="400" alt="bulgogi" />
+										<p>3. Place the meat and vegetables in a large bowl. Add the marinade and toss gently to combine everything well. Marinate the meat for 30 minutes to an hour, up to overnight.</p>
+										<img src="images/koreanbulgogi4.jpeg" width="400" alt="bulgogi" />
+			 							<p>4.Grilling: Grill the meat on a charcoal or gas grill or pan fry in a skillet over high heat until slightly caramelized. If pan searing, preheat the pan nice and hot and cook the meat until slightly caramelized. Do not crowd the skillet.</p>
+									 <img src="images/koreanbulgogi.jpg" width="400" alt="bulgogi" />
+						 				<p>5. OR Stir-frying: Preheat the pan, and add the meat over high meat. You can crowd the pan to generate some liquid and let the meat cook in its own juice. Cook until the meat is no longer pink. Use all the marinade if you want some sauce at the end.</p>
 
-                              ],
-                        type:'donut'
-                      },
-                      donut: { title: "Korean Bulgogi Nutrients",
-                         }
+										<div id="chart2"></div>
+										<script>
+										 var chart = c3.generate({
+												bindto: '#chart2',
+												data: {
+															columns: [
+																['Carbohydrate',7.8],
+																['Protein',34.4],
+																['Fat',25.2],
+																['Sugars',7.9],
+																['Sodium',0.56071],
+																['Cholesterol',9.96885],
+																['Saturated fatty acids',6.6],
+																['Trans Fat',0.4],
 
-                    });
-                    </script>
-                </div>
-              </div>
-            </div>
-          </div>
-          <br>
-          <br>
+															],
+												type:'donut'
+											},
+											donut: { title: "Korean Bulgogi Nutrients",
+												 }
 
-          <!--  japchae food About -->
-          <a id="japchae"></a>
-          <div class="food_about">
-            <div class="container">
-              <h2 class="text-center">JAPCHAE</h2>
-              <br>
-              <br>
-              <div class="row">
-                <div class="col-md-6">
-                  <h1>Ingredients <span class="color-primary">!</span></h1>
-                  <p class="line-space color-secondary">
-                    <p>
-                    <ul>-4 ounces beef, filet mignon (or pork shoulder), cut into ¼ inch wide and 2½ inch long strips</ul>
-                    <ul>-2 large dried shiitake mushrooms, soaked in warm water for 2 to 3 hours, cut into thin strips</ul>
-                    <ul>-2 garlic cloves, minced</ul>
-                    <ul>-1 tablespoons plus 2 teaspoons sugar</ul>
-                    <ul>-2 tablespoons plus 1 teaspoon soy sauce</ul>
-                    <ul>-2 tablespoons toasted sesame oil</ul>
-                    <ul>-1 tablespoon toasted sesame seeds</ul>
-                    <ul>-1 large egg</ul>
-                    <ul>-4 ounces spinach, washed and drained</ul>
-                    <ul>-4 ounces of dangmyeon (sweet potato starch noodles)</ul>
-                    <ul>-2 to 3 green onions, cut crosswise into 2 inch long pieces</ul>
-                    <ul>-1 medium onion (1 cup), sliced thinly</ul>
-                    <ul>-4 to 5 white mushrooms, sliced thinly</ul>
-                    <ul>-1 medium carrot (¾ cup), cut into matchsticks<ul>
-                    <ul>-½ red bell pepper, cut into thin strips (optional)</ul>
-                    <ul>-ground black pepper</ul>
-                    <ul>-kosher salt</ul>
-                    <ul>-vegetable oil</ul>
-                    </p>
-                </div>
-                <div class="col-md-6 d-flex  justify-content-end">
-                  <figure>
-                    <img src="img/japchae.jpg" class="rounded"/>
-                    <div class="back"></div>
-                  </figure>
-                </div>
-              </div>
-            </div>
-          <div>
-              <br>
-              <br>
-              <br>
-              <!-- food testimonials -->
-              <div class="food_testimonial">
-                <div class="overlay">
-                  <div class="valign_wrapper">
-                    <br>
-                    <br>
-                    <h2 class="color-white">Recipe</h2>
-                    <div class="testimonials">
-                      <p class="testimonials_text">
-                      <img src="img/japchae1.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                      <img src="img/japchae2.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                      <h5>Marinate the beef and mushrooms</h5>
-                      <p>Put the beef and shiitake mushrooms into a bowl and mix with 1 clove of minced garlic, 1 teaspoon sugar, ¼ teaspoon ground black pepper, 2 teaspoons soy sauce, and 1 teaspoon of toasted sesame oil with a wooden spoon or by hand. Cover and keep it in the fridge.</p>
-                      <br>
-                      <img src="img/japchae3.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                      <h5>Make the egg garnish (jidan)</h5>
-                      <p>1.Crack the egg and separate the egg yolk from the egg white. Remove the white stringy stuff (chalaza) from the yolk. Beat in a pinch of salt with a fork. </p>
-                      <p>2.Add 1 teaspoon of vegetable oil to a heated nonstick pan. Swirl the oil around so it covers the pan, and then wipe off the excess heated oil with a kitchen towel so only a thin layer remains on the pan.</p>
-                      <p>3.To keep the jidan as yellow as possible, turn off the heat and pour the egg yolk mixture into the pan. Tilt it around so the mixture spreads thinly. Let it cook using the remaining heat in the pan for about 1 minute. Flip it over and let it sit on the pan for 1 more minute.</p>
-                      <p>4.Let it cool and slice it into thin strips.</p>
-                      <br>
-                      <img src="img/japchae4.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                      <h5>Prepare the noodles and vegetables</h5>
-                      <p>• Bring a large pot of water to a boil. Add the spinach and blanch for 30 seconds to 1 minute, then take it out with a slotted spoon or strainer. Let the water keep boiling to cook the noodles.</p>
-                      <p>• Rinse the spinach in cold water to stop it from cooking. Squeeze it with your hands to remove any excess water. Cut it a few times and put it into a bowl. Mix with 1 teaspoon soy sauce and 1 teaspoon toasted sesame oil. Put it into a large mixing bowl.</p>
-                      <br>
-                      <p>1. Put the noodles into the boiling water, cover and cook for 1 minute. Stir them with a wooden spoon so they don’t stick together. Cover and keep cooking for another 7 minutes until the noodles are soft and chewy.</p>
-                      <p>2. Strain and cut them a few times with kitchen scissors. Put the noodles into the large bowl next to the spinach. Add 2 teaspoons toasted sesame oil, 1 teaspoon soy sauce, and 1 teaspoon sugar. Mix well by hand or a wooden spoon. This process will season the noodles and also keep the noodles from sticking to each other.</p>
-                      <br>
-                      <img src="img/japchae5.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                      <p>3. Heat up a skillet over medium high heat. Add 2 teaspoons vegetable oil with the onion, the green onion, and a pinch of salt. Stir-fry about 2 minutes until the onion looks a little translucent. Transfer to the noodle bowl.</p>
-                      <p>4. Heat up the skillet again and add 2 teaspoons vegetable oil. Add the white mushrooms and a pinch of salt. Stir-fry for 2 minutes until softened and a little juicy. Transfer to the noodle bowl.</p>
-                      <p>5. Heat up the skillet and add 1 teaspoon vegetable oil. Add the carrot and stir-fry for 20 seconds. Add the red bell pepper strips and stir-fry another 20 seconds. Transfer to the noodle bowl.</p>
-                      <p>6. Heat up the skillet and add 2 teaspoons vegetable oil. Add the beef and mushroom mixture and stir fry for a few minutes until the beef is no longer pink and the mushrooms are softened and shiny. Transfer to the noodle bowl.</p>
-                      <br>
-                      <img src="img/japchae6.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                      <h5>Mix and serve</h5>
-                      <p>7.Add 1 minced garlic clove, 1 tablespoon soy sauce, 1 tablespoon sugar, ½ teaspoon ground black pepper, and 2 teaspoons of toasted sesame oil to the mixing bowl full of ingredients. Mix all together by hand.</p>
-                      <br>
-                      <img src="img/japchae7.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                      <p>8. Add the egg garnish and 1 tablespoon sesame seeds. Mix it and transfer it to a large plate and serve.</p>
-                      </p>
-                      <div id="chart4"></div>
-                      <script>
-                       var chart = c3.generate({
-                          bindto: '#chart4',
-                          data: {
-                                columns: [
-                                  ['Carbohydrate',48.52],
-                                  ['Protein',9.41],
-                                  ['Fat',6.6],
-                                  ['Sugars',1.45],
-                                  ['Sodium',0.71968],
-                                  ['Cholesterol',0.04531],
-                                  ['Saturated fatty acids',1.09],
-                                  ['Trans Fats',0.14],
+										});
+										</script><br>
 
-                                ],
-                          type:'donut'
-                        },
-                        donut: { title: "Japchae Nutrition Facts",
-                           }
+					<!-- japchae -->
+								<a id="japchae"></a>
+								<div class="food_about">
+										<div class="container">
+											<h2 class="text-center">JAPCHAE</h2>
+												<img src="images/japchae.jpeg" width="400" alt="japchae" />
+												<div class="row">
+													<div class="col-md-6"><br>
+														<h4> Ingredients <span class="color-primary">!</span></h4>
+														<p class="line-space color-secondary">
+															<p>
+																<li>4 ounces beef, filet mignon (or pork shoulder), cut into ¼ inch wide and 2½ inch long strips</li>
+						                    <li>2 large dried shiitake mushrooms, soaked in warm water for 2 to 3 hours, cut into thin strips</li>
+						                    <li>2 garlic cloves, minced</li>
+						                    <li>1 tablespoons plus 2 teaspoons sugar</li>
+						                    <li>2 tablespoons plus 1 teaspoon soy sauce</li>
+						                    <li>2 tablespoons toasted sesame oil</li>
+						                    <li>1 tablespoon toasted sesame seeds</li>
+						                    <li>1 large egg</li>
+						                    <li>4 ounces spinach, washed and drained</li>
+						                    <li>4 ounces of dangmyeon (sweet potato starch noodles)</li>
+						                    <li>2 to 3 green onions, cut crosswise into 2 inch long pieces</li>
+						                    <li>1 medium onion (1 cup), sliced thinly</li>
+						                    <li>4 to 5 white mushrooms, sliced thinly</li>
+						                    <li>1 medium carrot (¾ cup), cut into matchsticks</li>
+						                    <li>½ red bell pepper, cut into thin strips (optional)</li>
+						                    <li>ground black pepper</li>
+						                    <li>kosher salt</li>
+						                    <li>vegetable oil</li>
+															</p>
+													</div>
+												</div>
+											</div>
+								 	</div>
 
-                      });
-                      </script>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <br>
-            <br>
+						        <img src="images/japchae1.jpeg" width="400" alt="japchae" />
+										<img src="images/japchae2.jpeg" width="400" alt="japchae" />
+										<h5>Marinate the beef and mushrooms</h5>
+										<p>Put the beef and shiitake mushrooms into a bowl and mix with 1 clove of minced garlic, 1 teaspoon sugar, ¼ teaspoon ground black pepper, 2 teaspoons soy sauce, and 1 teaspoon of toasted sesame oil with a wooden spoon or by hand. Cover and keep it in the fridge.</p>
+									  <img src="images/japchae3.jpeg" width="400" alt="japchae" />
+										<h5>Make the egg garnish (jidan)</h5>
+										<p>1.Crack the egg and separate the egg yolk from the egg white. Remove the white stringy stuff (chalaza) from the yolk. Beat in a pinch of salt with a fork. </p>
+										<p>2.Add 1 teaspoon of vegetable oil to a heated nonstick pan. Swirl the oil around so it covers the pan, and then wipe off the excess heated oil with a kitchen towel so only a thin layer remains on the pan.</p>
+										<p>3.To keep the jidan as yellow as possible, turn off the heat and pour the egg yolk mixture into the pan. Tilt it around so the mixture spreads thinly. Let it cook using the remaining heat in the pan for about 1 minute. Flip it over and let it sit on the pan for 1 more minute.</p>
+										<p>4.Let it cool and slice it into thin strips.</p>
+						  			<img src="images/japchae4.jpeg" width="400" alt="japchae" />
+										<h5>Prepare the noodles and vegetables</h5>
+										<p>• Bring a large pot of water to a boil. Add the spinach and blanch for 30 seconds to 1 minute, then take it out with a slotted spoon or strainer. Let the water keep boiling to cook the noodles.</p>
+										<p>• Rinse the spinach in cold water to stop it from cooking. Squeeze it with your hands to remove any excess water. Cut it a few times and put it into a bowl. Mix with 1 teaspoon soy sauce and 1 teaspoon toasted sesame oil. Put it into a large mixing bowl.</p>
+										<p>1. Put the noodles into the boiling water, cover and cook for 1 minute. Stir them with a wooden spoon so they don’t stick together. Cover and keep cooking for another 7 minutes until the noodles are soft and chewy.</p>
+										<p>2. Strain and cut them a few times with kitchen scissors. Put the noodles into the large bowl next to the spinach. Add 2 teaspoons toasted sesame oil, 1 teaspoon soy sauce, and 1 teaspoon sugar. Mix well by hand or a wooden spoon. This process will season the noodles and also keep the noodles from sticking to each other.</p>
+										<img src="images/japchae5.jpeg" width="400" alt="japchae" />
+										<p>3. Heat up a skillet over medium high heat. Add 2 teaspoons vegetable oil with the onion, the green onion, and a pinch of salt. Stir-fry about 2 minutes until the onion looks a little translucent. Transfer to the noodle bowl.</p>
+										<p>4. Heat up the skillet again and add 2 teaspoons vegetable oil. Add the white mushrooms and a pinch of salt. Stir-fry for 2 minutes until softened and a little juicy. Transfer to the noodle bowl.</p>
+										<p>5. Heat up the skillet and add 1 teaspoon vegetable oil. Add the carrot and stir-fry for 20 seconds. Add the red bell pepper strips and stir-fry another 20 seconds. Transfer to the noodle bowl.</p>
+										<p>6. Heat up the skillet and add 2 teaspoons vegetable oil. Add the beef and mushroom mixture and stir fry for a few minutes until the beef is no longer pink and the mushrooms are softened and shiny. Transfer to the noodle bowl.</p>
+						 				<img src="images/japchae6.jpeg" width="400" alt="japchae" />
+										<h5>Mix and serve</h5>
+										<p>7.Add 1 minced garlic clove, 1 tablespoon soy sauce, 1 tablespoon sugar, ½ teaspoon ground black pepper, and 2 teaspoons of toasted sesame oil to the mixing bowl full of ingredients. Mix all together by hand.</p>
+										<img src="images/japchae7.jpeg" width="400" alt="japchae">
+										<p>8. Add the egg garnish and 1 tablespoon sesame seeds. Mix it and transfer it to a large plate and serve.</p>
 
-            <!--  kimchistew food About -->
-            <div class="food_about">
-              <div class="container">
-                <h2 class="text-center">KIMCHI STEW</h2>
-                <br>
-                <br>
-                <div class="row">
-                  <div class="col-md-6">
-                    <h1>Ingredients <span class="color-primary">!</span></h1>
-                    <p class="line-space color-secondary">
-                      <p>
-                      <ul>-2 cups packed bite size kimchi fully fermented</ul>
-                      <ul>-4 ounces fresh pork belly or other pork meat with some fat or other protein choice</ul>
-                      <ul>-1 to 3 teaspoons gochugaru (Korean red chili pepper flakes) adjust to taste or omit</ul>
-                      <ul>-1 teaspoon minced garlic</ul>
-                      <ul>-1 tablespoon cooking oil</ul>
-                      <ul>-1/2 cup juice from kimchi if available</ul>
-                      <ul>-6 ounces tofu</ul>
-                      <ul>-2 scallions</ul>
-                      <ul>-salt (or a little bit of soup soy sauce or regular soy sauce) and pepper to taste</ul>
-                      </p>
-                  </div>
-                  <div class="col-md-6 d-flex  justify-content-end">
-                    <figure>
-                      <img src="img/kimchistew.jpeg" class="rounded"/>
-                      <div class="back"></div>
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            <div>
-                <br>
-                <br>
-                <br>
-                <!-- food testimonials -->
-                <div class="food_testimonial">
-                  <div class="overlay">
-                    <div class="valign_wrapper">
-                      <br>
-                      <br>
-                      <h2 class="color-white">Recipe</h2>
-                      <div class="testimonials">
-                        <p class="testimonials_text">
-                        <img src="img/kimchistew1.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                        <p>1 .Cut the kimchi into bite size pieces. </p>
-                        <br>
-                        <img src="img/kimchistew2.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                        <p>2 .Cut the meat into bite sizes. Slice the tofu (about 1/2-inch thick), and roughly chop the scallions.</p>
-                        <br>
-                        <img src="img/kimchistew3.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                        <p>3 .Heat a small to medium pot with 1 tablespoon of oil. Add the kimchi, pork, red pepper flakes and garlic and cook over medium high heat until the kimchi is softened and the pork cooks through, about 5 to 7 minutes. </p>
-                        <img src="img/kimchistew4.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                        <p>4. Add the kimchi juice and about 2 to 2.5 cups of water (or broth). Bring it to a boil, and continue cooking for 5 minutes. Then, reduce the heat to medium, and boil, covered, for about 15 minutes. You can add more water if necessary.</p>
-                        <p>5.Drop the tofu and scallions in. Salt (or soup or regular soy sauce) and pepper to taste. (Salt is usually not necessary, unless kimchi was lightly seasoned or kimchi juice is not available.) Boil until the tofu is cooked through, about 5 minutes. Serve while bubbling over from the heat.</p>
-                        </p>
-                        <div id="chart5"></div>
-                        <script>
-                         var chart = c3.generate({
-                            bindto: '#chart5',
-                            data: {
-                                  columns: [
-                                    ['carbohydrate',11.93],
-                                    ['protein',15.07],
-                                    ['Fat',15.01],
-                                    ['Sugars',3.03],
-                                    ['Sodium',1.96014],
-                                    ['Cholesterol',0.02518],
-                                    ['Saturated fatty acids',2.76],
-                                    ['Trans fat',0.03],
-                                  ],
-                            type:'donut'
-                          },
-                          donut: { title: "Kimchi Stew Nutrients",
-                             }
+										<div id="chart3"></div>
+										<script>
+										 var chart = c3.generate({
+												bindto: '#chart3',
+												data: {
+															columns: [
+																['Carbohydrate',48.52],
+																['Protein',9.41],
+																['Fat',6.6],
+																['Sugars',1.45],
+																['Sodium',0.71968],
+																['Cholesterol',0.04531],
+																['Saturated fatty acids',1.09],
+																['Trans Fats',0.14],
 
-                        });
-                        </script>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <br>
-              <br>
+															],
+												type:'donut'
+											},
+											donut: { title: "Japchae Nutrition Facts",
+												 }
 
-              <!--  Korean soybean paste stew food About -->
-              <div class="food_about">
-                <div class="container">
-                  <h2 class="text-center">KOREAN SOYBEAN PASTE STEW</h2>
-                  <br>
-                  <br>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <h1>Ingredients <span class="color-primary">!</span></h1>
-                      <p class="line-space color-secondary">
-                        <p>
-                        <ul>-3 ounces pork (preferably fatty pork) shoulder, or loin (or use beef, clams or shrimp if desired)</ul>
-                        <ul>-9 ounces tofu</ul>
-                        <ul>-1/2 medium zucchini</ul>
-                        <ul>-2 ounces Korean radish (mu)</ul>
-                        <ul>-1/4 medium onion</ul>
-                        <ul>-1 chili pepper green or red</ul>
-                        <ul>-1 scallion</ul>
-                        <ul>-2 tablespoons Korean soybean paste doenjang</ul>
-                        <ul>-1 teaspoon Korean chili pepper flakes (gochugaru) gochugaru</ul>
-                        <ul>-1 teaspoon minced garlic</ul>
-                        <ul>-2 cups water see note</ul>
-                        <ul>-1 teaspoon vinegar</ul>
-                        </p>
-                    </div>
-                    <div class="col-md-6 d-flex  justify-content-end">
-                      <figure>
-                        <img src="img/soybeanstew.jpeg" class="rounded"/>
-                        <div class="back"></div>
-                      </figure>
-                    </div>
-                  </div>
-                </div>
-              <div>
-                  <br>
-                  <br>
-                  <br>
-                  <!-- food testimonials -->
-                  <div class="food_testimonial">
-                    <div class="overlay">
-                      <div class="valign_wrapper">
-                        <br>
-                        <br>
-                        <h2 class="color-white">Recipe</h2>
-                        <div class="testimonials">
-                          <p class="testimonials_text">
-                          <img src="img/Korean soybean paste stew1.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                          <p>1.	Cut the tofu and zucchini into about 1-inch cubes. Cut the radish into thin small squares. Thinly slice the onion and pepper. Roughly chop the scallion. Slice the meat into thin strips.</p>
-                          <br>
-                          <img src="img/Korean soybean paste stew2.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                          <p>2.	Preheat a small pot with a little bit of oil. Sauté the meat, soybean paste, and chili pepper flakes, over medium heat for 3 to 4 minutes.</p>
-                          <br>
-                          <img src="img/Korean soybean paste stew3.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                          <p>3.	Add the water (or anchovy broth) and stir well to dissolve the soy bean paste. Add the radish. Boil over medium high heat for 4 to 5 minutes.</p>
-                          <br>
-                          <img src="img/Korean soybean paste stew4.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                          <p>4.	Add the onion, garlic, tofu, zucchini, and chili pepper. Boil for an additional 5 to 6 minutes. Throw in the scallion and add the vinegar with a minute or two remaining.</p>
-                          </p>
-                          <div id="chart6"></div>
-                          <script>
-                           var chart = c3.generate({
-                              bindto: '#chart6',
-                              data: {
-                                    columns: [
-                                      ['Carbohydrate',13.5],
-                                      ['Protein',1.5],
-                                      ['Fat',5],
-                                      ['Sugars',1.8],
-                                      ['Sodium',2.02101],
-                                      ['Cholesterol',0.01181],
-                                      ['Saturated fatty acids',0.8],
-                                      ['Dietary fiber',5.5],
-                                      ['Potassium',0.49866],
-                                      ['Calcium',0.152],
-                                    ],
-                              type:'donut'
-                            },
-                            donut: { title: "Korean Soybean Paste Stew Nutrients",
-                               }
+										});
+										</script><br>
 
-                          });
-                          </script>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <br>
-                <br>
+					<!-- kimchistew -->
+								<a id="kimchistew"></a>
+								<div class="food_about">
+										<div class="container">
+											<h2 class="text-center">KIMCHI STEW</h2>
+												<img src="images/kimchistew.jpeg" width="400" alt="kimchistew" />
+													<div class="row">
+														<div class="col-md-6"><br>
+															<h4> Ingredients <span class="color-primary">!</span></h4>
+															<p class="line-space color-secondary">
+																<p>
+																	<li>2 cups packed bite size kimchi fully fermented</li>
+						                      <li>4 ounces fresh pork belly or other pork meat with some fat or other protein choice</li>
+						                      <li>1 to 3 teaspoons gochugaru (Korean red chili pepper flakes) adjust to taste or omit</li>
+						                      <li>1 teaspoon minced garlic</li>
+						                      <li>1 tablespoon cooking oil</li>
+						                      <li>1/2 cup juice from kimchi if available</li>
+						                      <li>6 ounces tofu</li>
+						                      <li>2 scallions</li>
+						                      <li>salt (or a little bit of soup soy sauce or regular soy sauce) and pepper to taste</li>
+																</p>
+															</div>
+														</div>
+													</div>
+											 	</div>
+
+							         <img src="images/kimchistew1.jpeg" width="500" alt="kimchistew" />
+					  						<p>1 .Cut the kimchi into bite size pieces.</p>
+											 <img src="images/kimchistew2.jpeg" width="500" alt="kimchistew" />
+												<p>2 .Cut the meat into bite sizes. Slice the tofu (about 1/2-inch thick), and roughly chop the scallions.</p>
+											 <img src="images/kimchistew3.jpeg" width="500" alt="kimchistew" />
+									  		<p>3 .Heat a small to medium pot with 1 tablespoon of oil. Add the kimchi, pork, red pepper flakes and garlic and cook over medium high heat until the kimchi is softened and the pork cooks through, about 5 to 7 minutes.</p>
+											 <img src="images/kimchistew4.jpeg" width="500" alt="kimchistew" />
+											 <p>4. Add the kimchi juice and about 2 to 2.5 cups of water (or broth). Bring it to a boil, and continue cooking for 5 minutes. Then, reduce the heat to medium, and boil, covered, for about 15 minutes. You can add more water if necessary.</p>
+											 <p>5.Drop the tofu and scallions in. Salt (or soup or regular soy sauce) and pepper to taste. (Salt is usually not necessary, unless kimchi was lightly seasoned or kimchi juice is not available.) Boil until the tofu is cooked through, about 5 minutes. Serve while bubbling over from the heat.</p>
+
+											 <div id="chart4"></div>
+											 <script>
+												var chart = c3.generate({
+													 bindto: '#chart4',
+													 data: {
+																 columns: [
+																	 ['carbohydrate',11.93],
+																	 ['protein',15.07],
+																	 ['Fat',15.01],
+																	 ['Sugars',3.03],
+																	 ['Sodium',1.96014],
+																	 ['Cholesterol',0.02518],
+																	 ['Saturated fatty acids',2.76],
+																	 ['Trans fat',0.03],
+																 ],
+													 type:'donut'
+												 },
+												 donut: { title: "Kimchi Stew Nutrients",
+														}
+
+											 });
+											 </script><br>
+
+						 <!-- kimchistew -->
+										<a id="Korean soybean paste stew"></a>
+										<div class="food_about">
+											 	<div class="container">
+											 		<h2 class="text-center">KOREAN SOYBEAN PASTE STEW</h2>
+											 			<img src="images/soybeanstew.jpeg" width="400" alt="soybeanstew" />
+											 				<div class="row">
+											 					<div class="col-md-6"><br>
+											 						<h4> Ingredients <span class="color-primary">!</span></h4>
+											 						<p class="line-space color-secondary">
+											 							<p>
+																			<li>3 ounces pork (preferably fatty pork) shoulder, or loin (or use beef, clams or shrimp if desired)</li>
+							                        <li>9 ounces tofu</li>
+							                        <li>1/2 medium zucchini</li>
+							                        <li>2 ounces Korean radish (mu)</li>
+							                        <li>1/4 medium onion</li>
+							                        <li>1 chili pepper green or red</li>
+							                        <li>1 scallion</li>
+							                        <li>2 tablespoons Korean soybean paste doenjang</li>
+							                        <li>1 teaspoon Korean chili pepper flakes (gochugaru) gochugaru</li>
+							                        <li>1 teaspoon minced garlic</li>
+							                        <li>2 cups water see note</li>
+							                        <li>1 teaspoon vinegar</li>
+																		</p>
+											 						</div>
+											 					</div>
+											 				</div>
+											 			</div>
+
+											 	<img src="images/Korean soybean paste stew1.jpeg" width="500" alt="soybeanstew" />
+											 	<p>1.	Cut the tofu and zucchini into about 1-inch cubes. Cut the radish into thin small squares. Thinly slice the onion and pepper. Roughly chop the scallion. Slice the meat into thin strips.</p>
+											  <img src="images/Korean soybean paste stew2.jpeg" width="500" alt="soybeanstew" />
+											 	<p>2.	Preheat a small pot with a little bit of oil. Sauté the meat, soybean paste, and chili pepper flakes, over medium heat for 3 to 4 minutes.</p>
+											  <img src="images/Korean soybean paste stew3.jpeg" width="500" alt="soybeanstew" />
+												<p>3.	Add the water (or anchovy broth) and stir well to dissolve the soy bean paste. Add the radish. Boil over medium high heat for 4 to 5 minutes.</p>
+											 	<img src="images/Korean soybean paste stew4.jpeg" width="500" alt="soybeanstew" />
+											  <p>4.	Add the onion, garlic, tofu, zucchini, and chili pepper. Boil for an additional 5 to 6 minutes. Throw in the scallion and add the vinegar with a minute or two remaining.</p>
+
+												<div id="chart5"></div>
+												<script>
+												 var chart = c3.generate({
+														bindto: '#chart5',
+														data: {
+																	columns: [
+																		['Carbohydrate',13.5],
+																		['Protein',1.5],
+																		['Fat',5],
+																		['Sugars',1.8],
+																		['Sodium',2.02101],
+																		['Cholesterol',0.01181],
+																		['Saturated fatty acids',0.8],
+																		['Dietary fiber',5.5],
+																		['Potassium',0.49866],
+																		['Calcium',0.152],
+																	],
+														type:'donut'
+													},
+													donut: { title: "Korean Soybean Paste Stew Nutrients",
+														 }
+
+												});
+												</script><br>
+
+						</div>
+					</div>
 
 
-                  <!-- tteokgalbi or Grilled mined rib food About -->
-                  <div class="food_about">
-                    <div class="container">
-                      <h2 class="text-center">TTEOKGALBI OR GRILLED MINED RIB</h2>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <h1>Ingredients <span class="color-primary">!</span></h1>
-                          <p class="line-space color-secondary">
-                            <ul>-3 - 4 pounds beef short ribs or 2 pounds beef chuck or brisket</ul>
-                            <br>
-                            <h3>Marinade</h3>
-                            <ul>-4 tablespoons soy sauce</ul>
-                            <ul>-2 tablespoons sugar</ul>
-                            <ul>-2 tablespoons honey</ul>
-                            <ul>-2 tablespoons rice wine or Mirin</ul>
-                            <ul>-3 tablespoons grated Korean/Asian </ul>
-                            <br>
-                            <h3>pear or apple grated</h3>
-                            <ul>1/2 medium onion finely chopped</ul>
-                            <ul>3 scallions finely chopped</ul>
-                            <ul>2 tablespoons minced garlic</ul>
-                            <ul>1 teaspoon minced ginger</ul>
-                            <ul>1 tablespoons sesame oil</ul>
-                            <ul>1/4 teaspoon black pepper</ul>
-                            <ul>chopped pine nuts for garnish - optional</ul>
-                          </p>
-                        </div>
-                        <div class="col-md-6 d-flex  justify-content-end">
-                          <figure>
-                            <img src="img/tteokgalbi10.jpeg" class="rounded" />
-                            <div class="back"></div>
-                          </figure>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <br>
-                  <br>
 
-        <!-- food testimonials -->
-            <div class="food_testimonial">
-              <div class="overlay">
-                <div class="valign_wrapper">
-                    <br>
-                    <br>
-                    <h2 class="color-white">Recipe</h2>
-                    <div class="testimonials">
-                    <p class="testimonials_text">
-                    <img src="img/tteokgalbi1.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                    <p>1. Trim excess fat. Remove the meat as much as possible from the bones. Keep the meat in the freezer for about an hour.</p>
-                    <br>
-                    <img src="img/tteokgalbi2.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                    <p>2. Soak the ribs in cold water for 20 to 30 minutes to remove some blood. Drain.</p>
-                    <br>
-                    <img src="img/tteokgalbi3.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                    <p>3. Grind the meat using a meat grinder or a food processor. If mincing by hand, thinly slice the meat, cut the slices into thin strips, and then cut crosswise into small pieces.</p>
-                    <br>
-                    <img src="img/tteokgalbi4.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                    <p>4. Mince the meat by rocking the blade back and forth into the smallest pieces.</p>
-                    <br>
-                    <img src="img/tteokgalbi5.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                    <p>5. Mix all marinade ingredients well.</p>
-                    <br>
-                    <img src="img/tteokgalbi6.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                    <p>6. Add the marinade to the meat, and then mix very well. Knead the meat until it becomes a bit sticky, 2 to 3 minutes. Marinate the meat for at least 2 hours (overnight for best results).</p>
-                    <br>
-                    <img src="img/tteokgalbi7.jpeg" width="400" align='middle' vspace="10 hspace="10">
-                    <p>7. If using the rib bones, dredge the bone in flour.</p>
-                    <br>
-                    <img src="img/tteokgalbi9.jpeg" width="300" align='middle' vspace="10 hspace="10">
-                    <img src="img/tteokgalbi8.jpeg" width="300" align='middle' vspace="10 hspace="10">
-                   <p>8. Attach the meat to the bone in even thickness as you’re wrapping the bone with the meat. Press with your palms so the meat is tightly attached to the meat.</p>
-                 </p>
-                 <div id="chart7"></div>
-                 <script>
-                  var chart = c3.generate({
-                     bindto: '#chart7',
-                     data: {
-                           columns: [
-                             ['Carbohydrate',60.5],
-                             ['Protein',7.6],
-                             ['Fat',3.5],
-                             ['Sugars',6.8],
-                             ['Sodium',0.85308],
-                             ['Cholesterol',0.13607],
-                             ['Saturated fatty acids',0.8],
-                             ['Dietary fiber',3.5],
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: #</a></li>
+							</ul>
+						</div>
+					</footer>
 
-                           ],
-                     type:'donut'
-                   },
-                   donut: { title: "Tteokgalbi Nutrients",
-                      }
+			</div>
 
-                 });
-                 </script>
-               </div>
-            </div>
-        </div>
-     </div>
-  </body>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
